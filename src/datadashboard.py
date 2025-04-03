@@ -50,7 +50,7 @@ class DataDashboard(qtw.QApplication):
     def update_plot(self) -> None:
         self.display.update_scatter(self.engine.get_data())
         self.main_window.canvas.draw()
-        return
+        return None
     
     def load_data(self) -> None:
         file_name, _ = qtw.QFileDialog.getOpenFileName(self.main_window,
